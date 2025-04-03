@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('Saludo') {
             steps {
+                echo "Iniciando el pipeline..."
                 sh 'echo "Pipeline que ejecuta dentro del docker"' // Corregido el mensaje
             }
         }
